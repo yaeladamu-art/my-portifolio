@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yael's Personal Portfolio</title>
+
+    <style>
+
+        /* General Style */
+        body {
+            background-color: #f3eafa;
+            color: #333;
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        /* Main Heading */
+        #title {
+            background-color: #5e348b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 35px;
+        }
+
+        /* Subtitle */
+        .subtitle {
+            color: #7546a5;
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        /* Profile Photo */
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+            border: 4px solid #7546a5;
+        }
+
+        /* Navigation */
+        .navigation {
+            background-color: #5e348b;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .navigation a:hover {
+            background-color: #9872bd;
+        }
+
+        /* Hide all sections */
+        .section {
+            display: none;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Show Home by default */
+        #home {
+            display: block;
+        }
+
+        /* Show selected section */
+        .section:target {
+            display: block;
+        }
+
+        /* Hide Home when another section is selected */
+        body:has(.section:target) #home {
+            display: none;
+        }
+
+        /* Section Headings */
+        h2 {
+            color: #5e348b;
+            border-bottom: 2px solid #9872bd;
+            padding: 10px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th {
+            background-color: #5e348b;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #7546a5;
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* Lists */
+        ul, ol {
+            background-color: #f3eafa;
+            padding: 25px 45px;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #5e348b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="title">YAEL ADAMU</h1>
+
+    <p class="subtitle">
+        My Personal Background and Portfolio
+    </p>
+
+    <img src="myphoto.jpg"
+         alt="My Personal Photo"
+         class="profile-photo">
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <a href="#home">Home</a>
+        <a href="#background">Background</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Home -->
+    <div id="home" class="section">
+
+    <h2>Welcome to My Portfolio</h2>
+
+    <h2>Introduction</h2>
+    <p>
+        Hello! My name is Yael Adamu. I am a third-year
+        Software Engineering student at Bule Hora University.
+        I am passionate about technology, programming,
+        and web development. I enjoy learning new skills,
+        solving problems, and creating useful websites.
+        My ambition is to become a professional web developer.
+    </p>
+
+</div>
+    <!-- Background -->
+    <div id="background" class="section">
+        <h2>My Background</h2>
+
+        <p>
+            I am a motivated and hardworking student.
+            I enjoy learning new technologies, solving
+            problems, and developing useful software.
+            My goal is to become a good web developer.
+        </p>
+    </div>
+
+    <!-- Education -->
+    <div id="education" class="section">
+        <h2>My Education</h2>
+
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Information</th>
+            </tr>
+
+            <tr>
+                <td>University</td>
+                <td>Bule Hora University</td>
+            </tr>
+
+            <tr>
+                <td>Department</td>
+                <td>Software Engineering</td>
+            </tr>
+
+            <tr>
+                <td>Year</td>
+                <td>Third Year</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="section">
+        <h2>My Skills</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>MySQL</li>
+        </ul>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="section">
+        <h2>My Projects</h2>
+
+        <ol>
+            <li>Personal Portfolio Website</li>
+            <li>Student Database Project</li>
+            <li>Student Attendance Management System</li>
+        </ol>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <p>
+            Email:
+            <a href="mailto:yaeladamu@gmail.com">
+                yaeladamu@gmail.com
+            </a>
+        </p>
+
+        <p>Phone: +251905855815</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Yael Adamu. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
